@@ -1,0 +1,29 @@
+{
+  "name": "amqp-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akrnv25/amqp-sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akrnv25/amqp-sandbox/issues"
+  },
+  "homepage": "https://github.com/akrnv25/amqp-sandbox#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.4"
+  },
+  "dependencies": {
+    "amqp-connection-manager": "^4.1.11",
+    "amqplib": "^0.10.3",
+    "winston": "^3.8.2"
+  }
+}
