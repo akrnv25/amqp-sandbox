@@ -87,7 +87,7 @@ class AmqpService {
       await channelWrapper.waitForConnect();
       await channelWrapper.publish(exchange, topic, Buffer.from(JSON.stringify(message)));
     } catch (err) {
-      return Promise.reject(new BaseError({ origin: err }));
+      return Promise.reject(new BaseError({ origin: err, details }));
     }
   }
 }
