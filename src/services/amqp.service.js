@@ -66,10 +66,8 @@ class AmqpService {
       const foundStorageChannel = storageChannels.find(c => c.exchange === exchange);
       let channelWrapper;
       if (!isNil(foundStorageChannel)) {
-        console.log('exists');
         channelWrapper = foundStorageChannel.channelWrapper;
       } else {
-        console.log('create');
         channelWrapper = this._connection.createChannel({
           setup: async channel => {
             try {
