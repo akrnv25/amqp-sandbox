@@ -14,10 +14,10 @@ class AmqpService {
       `@${config.amqp.host}:${config.amqp.port}`;
     this._connection = amqp.connect(amqpConnectionStr);
     this._connection.on('connect', () => {
-      loggerService.highlight('AmqpService.constructor', 'Connected');
+      loggerService.highlight('AMQP connected');
     });
     this._connection.on('disconnect', () => {
-      loggerService.highlight('AmqpService.constructor', 'Disconnect');
+      loggerService.highlight('AMQP disconnect');
     });
   }
 
